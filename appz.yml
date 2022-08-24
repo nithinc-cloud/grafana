@@ -5,13 +5,13 @@ app:
     
 build:
     version: 7.0
-    env: PROD
+    env: DEV
     build_file: none
     output_files: output/*.zip
     image_template: grafana-7.0
     
 deploy:
-    context: alpha/PROD
+    context: alpha/DEV
     type: statefulset
     replicas: 1
     ingress: nodeport
@@ -23,8 +23,7 @@ volumes:
     mount: /appz/data
     name: data
     size: 5Gi
-    matchLabels: false
-    
+        
 properties:
     ADMIN_PASSWORD:     
        vault: ADMIN_PASSWORD
