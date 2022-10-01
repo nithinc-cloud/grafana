@@ -5,13 +5,13 @@ app:
     
 build:
     version: 7.0
-    env: DEV
+    env: PROD
     build_file: none
     output_files: output/*.zip
     image_template: grafana-7.0
     
 deploy:
-    context: alpha/DEV
+    context: alpha/PROD
     type: statefulset
     replicas: 1
     ingress: nodeport
