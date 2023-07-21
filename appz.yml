@@ -38,5 +38,5 @@ properties:
     GF_AUTH_GENERIC_OAUTH_API_URL: https://appz.98430751.lowtouch.cloud/openid/userinfo 
     GF_AUTH_GENERIC_OAUTH_NAME_ATTRIBUTE_PATH: anyname
     GF_AUTH_GENERIC_OAUTH_ROLE_ATTRIBUTE_PATH: contains(roles[*], 'admin') && 'Admin' || 'Viewer'
-    GF_SERVER_ROOT_URL: 
+    GF_SERVER_ROOT_URL: https://alpha-dev-grafana-7-0.98430751.lowtouch.cloud
     revision: 1
