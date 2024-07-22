@@ -8,7 +8,7 @@ build:
     env: DEV
     build_file: none
     output_files: output/*.zip
-    image_template: grafana-7.0
+    image_template: grafana-10.4
     
 deploy:
     context: alpha/DEV
