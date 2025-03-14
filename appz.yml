@@ -4,11 +4,11 @@ app:
     notify: bkoshy@ecloudcontrol.com
     
 build:
-    version: 7.0
+    version: 11.2
     env: DEV
     build_file: none
     output_files: output/*.zip
-    image_template: grafana-7.0
+    image_template: grafana-11.2
     
 deploy:
     context: alpha/DEV
@@ -39,4 +39,4 @@ properties:
     GF_AUTH_GENERIC_OAUTH_NAME_ATTRIBUTE_PATH: anyname
     GF_AUTH_GENERIC_OAUTH_ROLE_ATTRIBUTE_PATH: contains(roles[*], 'admin') && 'Admin' || 'Viewer'
     GF_SERVER_ROOT_URL: https://alpha-dev-grafana-7-0.038ecc66.lowtouch.cloud
-    revision: 60
+    revision: 1
