@@ -1,7 +1,7 @@
 app:
     name: grafana
     code: Grafana
-    notify: bkoshy@ecloudcontrol.com
+    notify: njose@ecloudcontrol.com
     
 build:
     version: 11.2
@@ -39,4 +39,4 @@ properties:
     GF_AUTH_GENERIC_OAUTH_NAME_ATTRIBUTE_PATH: anyname
     GF_AUTH_GENERIC_OAUTH_ROLE_ATTRIBUTE_PATH: contains(roles[*], 'admin') && 'Admin' || 'Viewer'
     GF_SERVER_ROOT_URL: https://ti-dev-grafana-11-2.lowtouchcloud.io
-    revision: 44
+    revision: 1
