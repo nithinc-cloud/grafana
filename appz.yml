@@ -5,13 +5,13 @@ app:
     
 build:
     version: 10.4
-    env: DEV
+    env: POC
     build_file: none
     output_files: output/*.zip
     image_template: grafana-10.4
     
 deploy:
-    context: alpha/DEV
+    context: alpha/POC
     type: statefulset
     replicas: 1
     port:
@@ -33,10 +33,10 @@ properties:
     GF_AUTH_GENERIC_OAUTH_CLIENT_SECRET: 
       vault: GF_AUTH_GENERIC_OAUTH_CLIENT_SECRET
     GF_AUTH_GENERIC_OAUTH_SCOPES: openid profile email  
-    GF_AUTH_GENERIC_OAUTH_AUTH_URL: https://appz-qa.lowtouchcloud.io/openid/authorize 
-    GF_AUTH_GENERIC_OAUTH_TOKEN_URL: https://appz-qa.lowtouchcloud.io/openid/token 
-    GF_AUTH_GENERIC_OAUTH_API_URL: https://appz-qa.lowtouchcloud.io/openid/userinfo 
+    GF_AUTH_GENERIC_OAUTH_AUTH_URL: https://dashboard-jw.lowtouchcloud.io/openid/authorize 
+    GF_AUTH_GENERIC_OAUTH_TOKEN_URL: https://dashboard-jw.lowtouchcloud.io/openid/token 
+    GF_AUTH_GENERIC_OAUTH_API_URL: https://dashboard-jw.lowtouchcloud.io/openid/userinfo 
     GF_AUTH_GENERIC_OAUTH_NAME_ATTRIBUTE_PATH: anyname
     GF_AUTH_GENERIC_OAUTH_ROLE_ATTRIBUTE_PATH: contains(roles[*], 'admin') && 'Admin' || 'Viewer'
-    GF_SERVER_ROOT_URL: https://alpha-dev-grafana-10-4-qa.lowtouchcloud.io
-    revision: 22
+    GF_SERVER_ROOT_URL: https://jw-dev-grafana-11-2.lowtouchcloud.io
+    revision: 00
