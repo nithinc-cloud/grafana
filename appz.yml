@@ -23,7 +23,7 @@ volumes:
     name: data
     size: 5Gi
     selector:
-      matchLabels: false
+    matchLabels: false
 
 properties:
     ADMIN_PASSWORD:     
