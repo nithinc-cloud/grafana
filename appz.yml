@@ -4,7 +4,7 @@ app:
     notify: appzdev@cloudbourne.com
     
 build:
-    version: 11.2
+    version: 10.4
     env: PROD
     build_file: none
     output_files: output/*.zip
