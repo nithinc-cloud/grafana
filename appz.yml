@@ -4,14 +4,14 @@ app:
     notify: nchelath@ecloudcontrol.com
     
 build:
-    version: 7.0
-    env: DEV
+    version: 10.4
+    env: POC
     build_file: none
     output_files: output/*.zip
-    image_template: grafana-7.0
+    image_template: grafana-12.0
     
 deploy:
-    context: nithinc-cloud/DEV
+    context: muthoot/POC
     type: statefulset
     replicas: 1
     port:
