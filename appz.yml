@@ -1,7 +1,7 @@
 app:
     name: grafana
     code: Grafana
-    notify: nchelath@ecloudcontrol.com
+    notify: appzdev@cloudbourne.comm
     
 build:
     version: 10.4
